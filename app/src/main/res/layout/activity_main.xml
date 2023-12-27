@@ -9,8 +9,8 @@
 
     <FrameLayout
         android:id="@+id/flTimer"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -41,13 +41,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/initial_timer_values"
                 android:textColor="@color/max_blue"
-                android:textSize="40sp"
+                android:textSize="80sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.441" />
+                app:layout_constraintVertical_bias="0.309" />
 
             <TextView
                 android:id="@+id/tvTimeLabel"
@@ -55,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/time_label"
                 android:textColor="@color/max_blue"
-                android:textSize="16sp"
+                android:textSize="32sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +91,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnMoreTime"
+        android:id="@+id/btnReset"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginEnd="44dp"
@@ -103,6 +104,7 @@
         android:contentDescription="@string/description_more_time_button" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPlayPause"
         android:layout_width="284dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
